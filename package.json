@@ -1,0 +1,15 @@
+{
+  "name": "hubplay",
+  "version": "1.0.0",
+  "description": "Aplicacao Frontend que consome recursos do Mercado Livre",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Lucas Travagin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}

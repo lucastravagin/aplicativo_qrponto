@@ -1,0 +1,44 @@
+<div ng-controller="PontoCtrl as $ctrl" clas="row">
+    <h3 class="text-center">
+        <i class="fa fa-calendar"></i> {{ $ctrl.dataAtual | date: 'dd MMMM, yyyy' }}
+        <i class="fa fa-clock-o"></i> {{ $ctrl.horaAtual | date:'HH:mm:ss'}}
+        <h5 class="text-center">Bem vindo, {{:: $ctrl.getUser().nome}}</h5>
+    </h3>
+
+    <div class="text-center mt-5">
+        <button ng-click="$ctrl.addPonto()" type="button" class="btn btn-primary btn-lg">Registrar Ponto</button>
+    </div>
+
+    <div class="card m-t-30">
+
+        <div class="card-header bg-primary">
+            <h5 class="card-title text-center text-white">Pontos registrados em {{ $ctrl.dataAtual | date: 'dd MMMM, yyyy' }} </h5>
+  
+        </div>
+
+        <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Data</th>
+                    <th scope="col">Entrada</th>
+                    <th scope="col">Almoço</th>
+                    <th scope="col">Retorno</th>
+                    <th scope="col">Saída</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">{{$ctrl.registroHoje.date}}</th>
+                    <td>{{$ctrl.registroHoje.pontos[0]}}</td>
+                    <td>{{$ctrl.registroHoje.pontos[1]}}</td>
+                    <td>{{$ctrl.registroHoje.pontos[2]}}</td>
+                    <td>{{$ctrl.registroHoje.pontos[3]}}</td>
+                  </tr>
+                </tbody>
+              </table>                                            
+            </div>
+        </div>
+    </div>
+</div>

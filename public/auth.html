@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="appQrPonto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="libs/angular-toastr/dist/angular-toastr.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/sweetalert/lib/sweet-alert.css">
+    <link rel="stylesheet" href="vertical/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vertical/assets/css/icons.css">
+    <link rel="stylesheet" href="vertical/assets/css/style.css">
+
+
+    <title>QrPonto</title>
+</head>
+
+<body class="xp-vertical">
+    
+    <div ng-include="'auth/form.html'">
+    
+    </div> 
+    <!--Libs-->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="libs/angular-toastr/dist/angular-toastr.tpls.min.js"></script>
+    <script src="libs/sweetalert/lib/sweet-alert.js"></script>
+    <script src="libs/angular-sweetalert/SweetAlert.js"></script>
+    <script src="vertical/assets/js/jquery.min.js"></script>
+    <script src="vertical/assets/js/bootstrap.min.js"></script>
+    <script src="vertical/assets/js/sidebar-menu.js"></script>
+    <script src="vertical/assets/js/jquery.slimscroll.js"></script>
+    <script src="vertical/assets/js/main.js"></script>
+    <!--Libs-->
+    
+    <!--Initial do Angular-->
+    <script src="index.js"></script>
+    <!--Initial do Angular-->
+
+    <!--Configs-->
+    <script src="config/routes.js"></script>
+    <script src="config/consts.js"></script>
+    <!--Configs-->
+
+    <!--Commons-->
+    <script src="common/factories/handleResponseErrorFactory.js"></script>
+    <script src="common/factories/msgsFactory.js"></script>
+    <script src="common/factories/authFactory.js"></script>
+    <!--Commons-->
+
+    <!--Controllers-->
+    <script src="auth/authController.js"></script>
+    <script src="ponto/ponto.controller.js"></script>
+    <!--Controllers-->
+</body>
+
+</html>
